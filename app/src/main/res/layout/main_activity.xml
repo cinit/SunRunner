@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical">
+
+            <TextView android:id="@+id/mainActivity_mainTitleTextView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textIsSelectable="true"
+                      android:text="Main Title"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView android:id="@+id/mainActivity_additionalTextView"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textIsSelectable="true"
+                      android:text="N/A"
+                      android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+
+
+        <TextView android:id="@+id/mainActivity_subTitleTextView"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textIsSelectable="true"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:text="Sub Title"
+                  android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登录\n方式"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <Button
+                    android:id="@+id/mainActivity_wxLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:onClick="handleOnClickEvent"/>
+
+            <Button
+                    android:id="@+id/mainActivity_rootLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="ROOT"
+                    android:onClick="handleOnClickEvent"/>
+
+            <Button
+                    android:id="@+id/mainActivity_captureLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="抓包"
+                    android:onClick="handleOnClickEvent"/>
+
+            <Button
+                    android:id="@+id/mainActivity_manualLoginButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="手动"
+                    android:onClick="handleOnClickEvent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/mainActivity_GetRecordButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="刷新记录"
+                    android:onClick="handleOnClickEvent"/>
+            <Button
+                    android:id="@+id/mainActivity_RunConfig"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="跑步设置"
+                    android:onClick="handleOnClickEvent"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <Button
+                    android:id="@+id/mainActivity_RunNowButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="立即跑步"
+                    android:onClick="handleOnClickEvent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/mainActivity_validCountTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="有效 ? 次"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+            <TextView
+                    android:id="@+id/mainActivity_invalidCountTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="无效 ? 次"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+
+        <ListView
+                android:id="@+id/mainActivity_recordListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"/>
+
+    </LinearLayout>
+</LinearLayout>

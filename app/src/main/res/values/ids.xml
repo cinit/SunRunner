@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="menu_showLoginInfo"/>
+    <item type="id" name="menu_stopCapture"/>
+    <item type="id" name="menu_logout"/>
+    <item type="id" name="menu_about"/>
+    <item type="id" name="menu_help"/>
+    <item type="id" name="menu_exit"/>
+</resources>
